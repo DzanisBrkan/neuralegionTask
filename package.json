@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "client": "npm start --prefix task-app app.js",
+    "clientinstall": "npm install --prefix task-app",
+    "dev": "concurrently \"npm run --prefix server devStart\" \"npm run client\""
+  },
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  }
+}
